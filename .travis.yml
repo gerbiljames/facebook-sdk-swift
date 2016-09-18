@@ -10,7 +10,6 @@ env:
     - TEST_TYPE=Samples
     - TEST_TYPE=CocoaPods
 before_install:
-- gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 - |
   if [ "$TEST_TYPE" = Lint ] || [ "$TEST_TYPE" = Carthage ]; then
     brew update
