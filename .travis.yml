@@ -17,6 +17,7 @@ before_install:
   if [ "$TEST_TYPE" = Lint ] || [ "$TEST_TYPE" = Carthage ]; then
     brew update
   fi
+  gem install cocoapods -v '1.1.0.rc.2'
 install:
 - |
   gem update --system --no-document
